@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Urbanist:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="bg-body text-white font-monserrat pb-12">
-    <header py-6>
-        <div class="container fixed top-0 left-0 right-0 py-6 flex justify-between items-left mx-auto px-8 md:px-14 lg:px-24">
-            <div class="logo text-accent-color font-bold text-xl">
+<body class="bg-body text-white font-mont pb-12">
+    <header>
+        <div class="fixed top-0 left-0 right-0 py-6 flex justify-between   mx-auto px-8 md:px-14 lg:px-32 w-screen">
+            <div class="logo ml-4 text-accent-color font-bold text-xl">
                 <span class="text-white">66</span>MACRO</div>
 
-            <nav id="navigation" class="hidden uppercase md:flex space-x-12 items-center">
+            <nav id="navigation" class="hidden mr-4 uppercase md:flex space-x-12 items-center">
                 <a href="#" class="active text-accent-color">Strona Główna</a>
                 <a href=" # ">O Nas</a>
                 <a href="# ">Patron</a>
@@ -25,14 +26,14 @@
             </nav>
         </div>
     </header>
-    <div id="hero" class="flex  px-8 md:px-14 lg:px-24">
-        <div class="slogan flex-auto w-64 pt-48">
-            <h1 class="text-4xl font-bold">
-                Witamy cię w społeczności <br>
-                <span class="text-accent-color upp">66</span>MACRO</h1>
+    <div id="hero" class="flex mx-auto  px-8 md:px-14 lg:px-32 font-urban tracking-widest">
+        <div class="slogan  ml-4 pb-48 flex-auto w-64 pt-48">
+            <h1 class="text-6xl  tracking-widest">
+                66<span class="text-accent-color font-bold">MACRO</span> Towje drzwi do świata inwestycji</h1>
             <h2 class="uppercase bold text-xl mt-6"> Analiza techniczna / newsy / forum </h2>
+            <button class="btn mt-6 px-6 py-2 border-2 border-accent-color"> Więcej</button>
         </div>
-        <div class="image flex-auto w-64 h-screen  bg-cover bg-center "></div>
+        <div class="image flex-auto w-64 h-100  bg-cover bg-center "></div>
     </div>
 </body>
 
