@@ -1,8 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* *{
+    border:0.25px solid blue;
+} */
 #hero .image {
     background-image: url(/img/hero-img.png);
         background-position: center;
         background-size: cover;   
 }
+/* animation */
+@keyframes left-move {
+    0% {
+      opacity: 0;
+      transform: translateX(-150px);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes right-move {
+    0% {
+      opacity: 0;
+      transform: translateX(150px);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes drop{
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+  }
+  .animate-right{
+    animation:right-move 1s;
+  }
+  .animate-left{
+    animation:left-move 1s;
+  }
+  .animate-drop{
+    animation:drop 1s;
+  }
