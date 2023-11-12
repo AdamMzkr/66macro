@@ -692,7 +692,7 @@ video {
 } */
 
 #hero .image {
-  background-image: url(/img/hero-img.png);
+  background-image: url(./img/hero-img.png);
   background-position: center;
   background-size: cover;
 }
