@@ -9,6 +9,9 @@
         background-position: center;
         background-size: cover;   
 }
+.shadow-accent{
+  box-shadow: 15px 15px #D75C03;
+}
 /* animation */
 @keyframes left-move {
     0% {
