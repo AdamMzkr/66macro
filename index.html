@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>66MACRO</title>
-    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="icon" type="image/png" href="img/title-icon.png"/>
     <link rel="stylesheet" href="tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 
 <body class="bg-body text-white font-mont pb-12">
     <header>
-        <div class="fixed top-0 left-0 right-0 py-6 flex justify-between   mx-auto px-8 md:px-14 lg:px-32 w-screen">
-            <div class="logo ml-4 text-accent-color font-bold text-xl">
+        <div class="fixed bg-body top-0 left-0 right-0 py-3 flex justify-between   mx-auto px-8 md:px-14 lg:px-32 w-screen">
+            <div class="logo text-accent-color font-bold text-xl">
                 <span class="text-white">66</span>MACRO</div>
 
-            <nav id="navigation" class="hidden mr-4 uppercase md:flex space-x-12 items-center">
+            <nav id="navigation" class="hidden mr-4 uppercase md:flex space-x-6 items-center">
                 <a href="#" class="active text-accent-color">Strona Główna</a>
                 <a href=" # ">O Nas</a>
                 <a href="# ">Patron</a>
@@ -27,15 +27,32 @@
             </nav>
         </div>
     </header>
-    <div id="hero" class="flex mx-auto  px-8 md:px-14 lg:px-32 font-urban tracking-widest">
-        <div class="animate-left slogan  ml-4 flex-auto w-64 lg:py-24">
+
+    <section id="hero" class="flex flex-col md:flex-row mx-auto  pl-8 md:pl-14 lg:pl-32 font-urban tracking-widest">
+        <div class="animate-left slogan flex-auto w-full  md:w-64 py-10 lg:py-24">
             <h1 class="text-6xl  tracking-widest">
                 66<span class="text-accent-color font-bold">MACRO</span> Towje drzwi do świata inwestycji</h1>
             <h2 class="uppercase bold text-xl mt-6"> Analiza techniczna / newsy / forum </h2>
             <button class="btn mt-6 px-6 py-2 border-2 border-accent-color"> Więcej</button>
         </div>
-        <div class="animate-right image flex-auto w-64  bg-cover bg-center "></div>
+        <div class="animate-right image flex-auto h-96  md:h-auto  md:w-64"></div>
+    </section>
+ 
+    <section id="about" class="animate-drop -mt-6 bg-accent-color-dark py-4 px-8 md:px-14 lg:px-32 z-0">
+        <h2 class="section-title  py-4 text-4xl text-accent-color uppercase">O Nas</h2>
+        <div class="content flex">
+            <div class="bg-white flex-auto w-2/6 shadow-accent translate-y-5"></div>
+        <article class="flex-auto w-4/6 ml-20" >
+            <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
+                repellat quos ex facilis placeat est modi obcaecati, facere architecto tempore enim harum.</p>
+            <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
+                repellat quos ex facilis placeat est modi obcaecati, facere architecto tempore enim harum.</p>
+            <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
+                repellat quos ex facilis placeat est modi obcaecati, facere architecto tempore enim harum.</p>
+        </article>
+        
     </div>
+    </section>
 </body>
 
 </html>
