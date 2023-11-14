@@ -12,6 +12,12 @@
 .shadow-accent{
   box-shadow: 15px 15px #D75C03;
 }
+.shadow-dark{
+  box-shadow: 15px 15px #100D0B;
+}
+.shadow-white{
+  box-shadow: 15px 15px white;
+}
 /* animation */
 @keyframes left-move {
     0% {
