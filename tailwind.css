@@ -554,8 +554,12 @@ video {
   z-index: 0;
 }
 
-.m-5 {
-  margin: 1.25rem;
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
 }
 
 .mx-auto {
@@ -563,12 +567,12 @@ video {
   margin-right: auto;
 }
 
-.-mt-5 {
-  margin-top: -1.25rem;
+.-mt-16 {
+  margin-top: -4rem;
 }
 
-.-mt-6 {
-  margin-top: -1.5rem;
+.-mt-8 {
+  margin-top: -2rem;
 }
 
 .ml-20 {
@@ -603,8 +607,8 @@ video {
   display: none;
 }
 
-.h-72 {
-  height: 18rem;
+.h-80 {
+  height: 20rem;
 }
 
 .h-96 {
@@ -615,16 +619,20 @@ video {
   width: 33.333333%;
 }
 
-.w-3\/6 {
-  width: 50%;
-}
-
 .w-4\/6 {
   width: 66.666667%;
 }
 
-.w-52 {
-  width: 13rem;
+.w-48 {
+  width: 12rem;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
 }
 
 .w-full {
@@ -691,16 +699,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-2 {
@@ -751,6 +759,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-mont {
   font-family: 'Monstserrat', sans-serif;
 }
@@ -774,12 +786,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .tracking-widest {
@@ -791,9 +812,28 @@ video {
   color: rgb(215 92 3 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-tex-color-dark {
+  --tw-text-opacity: 1;
+  color: rgb(16 13 11 / var(--tw-text-opacity));
+}
+
+.text-tex-color-light {
+  --tw-text-opacity: 1;
+  color: rgb(217 217 217 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .shadow-white {
@@ -809,6 +849,24 @@ video {
   background-image: url(./img/hero-img.png);
   background-position: center;
   background-size: cover;
+}
+
+h4{
+  text-align: center;
+}
+
+.btn{
+  font-weight: 600;
+}
+
+.card:hover{
+  translate: 0em -1em;
+  transition:0.75s;
+}
+
+.btn:hover{
+  background-color: #D75C03;
+  transition:0.5s background-color;
 }
 
 .shadow-accent{
