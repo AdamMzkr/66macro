@@ -9,6 +9,20 @@
         background-position: center;
         background-size: cover;   
 }
+h4{
+  text-align: center;
+}
+.btn{
+  font-weight: 600;
+}
+.card:hover{
+  translate: 0em -1em;
+  transition:0.75s;
+}
+.btn:hover{
+  background-color: #D75C03;
+  transition:0.5s background-color;
+}
 .shadow-accent{
   box-shadow: 15px 15px #D75C03;
 }
