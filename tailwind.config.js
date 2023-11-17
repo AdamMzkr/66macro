@@ -5,8 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 'body': '#100D0B',
-                'tex-color-light': '#D9D9D9',
-                'tex-color-dark': '#100D0B',
+                'tLight': '#D9D9D9',
+                'tDark': '#100D0B',
                 'accent-color': '#D75C03',
                 'accent-color-dark': '#1E0D01',
             },
