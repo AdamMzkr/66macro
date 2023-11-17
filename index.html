@@ -13,17 +13,17 @@
 
 </head>
 
-<body class="bg-body text-white font-mont pb-12">
+<body class="bg-body text-tLight font-mont pb-12">
     <header>
-        <div class="fixed bg-body top-0 left-0 right-0 px-2 py-3 flex justify-between   mx-auto px-8 md:px-14 lg:px-32 w-screen">
-            <div class="logo text-accent-color font-bold text-xl">
-                <span class="text-white">66</span>MACRO</div>
+        <div id="nav" class=" hidden fixed top-0 left-0 right-0 p-2 md:flex justify-between   mx-auto px-8 md:px-14 lg:px-32 w-screen z-10">
+            <div class="logo text-xl text-accent-color">
+                <span class=" text-white font-bold">66</span>MACRO</div>
 
-            <nav id="navigation" class="hidden mr-4 uppercase md:flex space-x-6 items-center">
-                <a href="#" class="active text-accent-color">Strona Główna</a>
-                <a href=" # ">O Nas</a>
-                <a href="# ">Patron</a>
-                <a href="# ">Tutoriale</a>
+            <nav class="text-white mr-4 uppercase flex space-x-6 items-center">
+                <a href="#hero" class="nav-item active bold">Strona Główna</a>
+                <a href="#about" class="nav-item">O Nas</a>
+                <a href="#patron"class="nav-item">Patron</a>
+                <a href="# " class="nav-item">Tutoriale</a>
             </nav>
         </div>
     </header>
@@ -38,11 +38,11 @@
         <div class="animate-right image flex-auto h-96  md:h-auto  md:w-64"></div>
     </section>
  
-    <section id="about" class="  animate-drop bg-accent-color-dark py-4 mr-8 md:mr-14 lg:mr-32 px-8 md:px-14 lg:px-32 z-0">
+    <section id="about" class="animate-drop bg-accent-color-dark py-4 mr-8 md:mr-14 lg:mr-32 pl-8 md:pl-14 lg:pl-32 z-0">
         <h2 class="section-title  p-4 text-4xl text-white uppercase">O Nas</h2>
-        <div class="content flex flex-col md:flex-row">
-            <div class="bg-white flex-auto w-2/6 shadow-accent translate-y-5 px-4"></div>
-        <article class="flex-auto w-4/6 ml-20" >
+        <div class="content flex justify-between flex-col md:flex-row  w-100">
+            <div class="bg-white  w-2/6 shadow-accent translate-y-5 px-4"></div>
+        <article class="w-4/6 ml-20 " >
             <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
                 repellat quos ex facilis placeat est modi obcaecati, facere architecto tempore enim harum.</p>
             <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
@@ -58,7 +58,7 @@
     <section id="patron" class=" animate-drop bg-accent-color px-4 mt-10 py-4 ml-8 md:ml-14 lg:ml-32 z-0">
         <h2 class="section-title p-4 text-4xl text-white uppercase">Patron</h2>
         <div class="content flex flex-col md:flex-row">
-        <article class="flex-auto w-5/12 p-4">
+        <article class=" text-tDark w-5/12 p-4">
             <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
                 repellat quos ex facilis placeat est modi obcaecati, facere architecto tempore enim harum.</p>
             <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque veritatis nostrum fugiat, nam voluptates, nobis 
@@ -68,8 +68,8 @@
             <div class="card w-48 h-80  m-10 -mt-8 bg-white shadow-dark">
                 <div class="content">
                     <h3 class="py-3 text-center font-bold uppercase text-accent-color">Patron</h3>
-                <div class="benefits text-xs text-tex-color-dark p-2 leading-5 flex flex-center flex-col">
-                    <h3 class="text-center "><strong class="text-accent-color text-xl">5$</strong>/mies</h5>
+                <div class="benefits text-xs text-tDark p-2 leading-5 flex flex-center flex-col">
+                    <h3 class="text-center mb-4 "><strong class="text-accent-color text-xl">5$</strong>/mies</h5>
                     <h4>Lorem, ipsum dolor sit amet  </h4>
                     <h4>Lorem, ipsum dolor sit amet </h4>
                     <h4>Lorem, ipsum dolor sit amet </h4>
@@ -85,7 +85,7 @@
                 <div class="content">
                     <h3 class="py-3 text-center font-bold uppercase text-accent-color">Patron+</h3>
                 <div class="benefits text-xs text-tex-color-light p-2 leading-5 flex flex-center flex-col">
-                    <h3 class="text-center "><strong class="text-accent-color text-xl">50$</strong>/mies</h5>
+                    <h3 class=" mb-4 text-center "><strong class="text-accent-color text-xl">50$</strong>/mies</h5>
                     <h4>Lorem, ipsum dolor sit amet  </h4>
                     <h4>Lorem, ipsum dolor sit amet </h4>
                     <h4>Lorem, ipsum dolor sit amet </h4>
@@ -102,5 +102,5 @@
     </div>
     </section>
 </body>
-
+<script src="main.js"></script>
 </html>
