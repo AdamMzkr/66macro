@@ -6,59 +6,61 @@
 } */
 html{
   scroll-behavior: smooth;
-  scroll-padding: 2rem;
+  scroll-padding: 4rem;
 }
+/* navigation start */
+/* #nav{
+  @apply px-8 md:px-14 lg:px-32
+} */
+.active-nav{
+  @apply text-accent-color bg-body transition;
+}
+.active{
+ @apply border-b-2 border-accent-color;
+ 
+}
+.nav-item{
+ @apply inline-block relative;
+ 
+}
+.nav-item:after {
+ content:'';
+ height: 2px;
+ transform:scaleX(0);
+ transform-origin: bottom right;
+ @apply absolute w-full bottom-0 left-0 bg-accent-color transition duration-300;
+}
+
+.nav-item:hover:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+/* navigation end */
+
 #hero .image {
     background-image: url(./img/hero-imgN.png);
         background-position: center;
         background-size: cover;   
 }
-
-.active-nav{
-  color:#D75C03;
-  background:#100D0B;
-  transition: 0.75s
+.section-title{
+  @apply my-2 p-2 text-4xl text-white uppercase;
 }
-.active{
-  border-bottom: 2px solid #D75C03;
-  
-}
-.nav-item{
-  display: inline-block;
-  position: relative;
-}
-.nav-item:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #D75C03;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.nav-item:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 h4{
-  text-align: center;
+  @apply text-center
 }
 .btn{
-  font-weight: 600;
-}
-.card:hover{
-  translate: 0em -1em;
-  transition:0.75s;
+  @apply px-6 py-2 border-2 border-accent-color
 }
 .btn:hover{
-  background-color: #D75C03;
-  transition:0.5s background-color;
+  @apply bg-accent-color transition duration-500
 }
+.card{
+  @apply w-60 md:w-48 py-5 md:py-0 md:h-80 ;
+}
+.card:hover{
+  @apply -translate-y-4 transition duration-500;
+}
+
 .shadow-accent{
   box-shadow: 15px 15px #D75C03;
 }
@@ -109,3 +111,5 @@ h4{
   .animate-drop{
     animation:drop 1s;
   }
+
+  
