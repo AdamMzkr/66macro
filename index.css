@@ -1,115 +1,137 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* *{
     border:0.25px solid blue;
 } */
-html{
-  scroll-behavior: smooth;
-  scroll-padding: 4rem;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
 }
+
+
 /* navigation start */
-/* #nav{
-  @apply px-8 md:px-14 lg:px-32
-} */
-.active-nav{
-  @apply text-accent-color bg-body transition;
+
+#nav {
+    @apply px-8 md:px-14 lg:px-32 xl:px-64
 }
-.active{
- @apply border-b-2 border-accent-color;
- 
+
+.active-nav {
+    @apply text-accent-color bg-body transition;
 }
-.nav-item{
- @apply inline-block relative;
- 
+
+.active {
+    @apply border-b-2 border-accent-color;
 }
+
+.nav-item {
+    @apply inline-block relative;
+}
+
 .nav-item:after {
- content:'';
- height: 2px;
- transform:scaleX(0);
- transform-origin: bottom right;
- @apply absolute w-full bottom-0 left-0 bg-accent-color transition duration-300;
+    content: '';
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    @apply absolute w-full bottom-0 left-0 bg-accent-color transition duration-300;
 }
 
 .nav-item:hover:after {
- transform: scaleX(1);
- transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
+
 /* navigation end */
 
 #hero .image {
     background-image: url(./img/hero-imgN.png);
-        background-position: center;
-        background-size: cover;   
-}
-.section-title{
-  @apply my-2 p-2 text-4xl text-white uppercase;
-}
-h4{
-  @apply text-center
-}
-.btn{
-  @apply px-6 py-2 border-2 border-accent-color
-}
-.btn:hover{
-  @apply bg-accent-color transition duration-500
-}
-.card{
-  @apply w-60 md:w-48 py-5 md:py-0 md:h-80 ;
-}
-.card:hover{
-  @apply -translate-y-4 transition duration-500;
+    background-position: center;
+    background-size: cover;
 }
 
-.shadow-accent{
-  box-shadow: 15px 15px #D75C03;
+.section-title {
+    @apply my-2 p-2 text-4xl text-white uppercase;
 }
-.shadow-dark{
-  box-shadow: 15px 15px #100D0B;
+
+h4 {
+    @apply text-center
 }
-.shadow-white{
-  box-shadow: 15px 15px white;
+
+.btn {
+    @apply px-6 py-2 border-2 border-accent-color
 }
+
+.btn:hover {
+    @apply bg-accent-color transition duration-500
+}
+
+.card {
+    @apply w-60 md:w-48 xl:w-52 py-5 md:py-0 md:h-80 xl:h-96 xl:pt-10;
+}
+
+.card:hover {
+    @apply -translate-y-4 transition duration-500;
+}
+
+.shadow-accent {
+    box-shadow: 15px 15px #D75C03;
+}
+
+.shadow-dark {
+    box-shadow: 15px 15px #100D0B;
+}
+
+.shadow-white {
+    box-shadow: 15px 15px white;
+}
+
+
 /* animation */
+
 @keyframes left-move {
     0% {
-      opacity: 0;
-      transform: translateX(-150px);
+        opacity: 0;
+        transform: translateX(-150px);
     }
     100% {
-      opacity: 100%;
-      transform: translateX(0px);
+        opacity: 100%;
+        transform: translateX(0px);
     }
-  }
-  
-  @keyframes right-move {
-    0% {
-      opacity: 0;
-      transform: translateX(150px);
-    }
-    100% {
-      opacity: 100%;
-      transform: translateX(0px);
-    }
-  }
-  @keyframes drop{
-    0% {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-    100% {
-      opacity: 100%;
-      transform: translateY(0px);
-    }
-  }
-  .animate-right{
-    animation:right-move 1s;
-  }
-  .animate-left{
-    animation:left-move 1s;
-  }
-  .animate-drop{
-    animation:drop 1s;
-  }
+}
 
-  
+@keyframes right-move {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.animate-right {
+    animation: right-move 1s;
+}
+
+.animate-left {
+    animation: left-move 1s;
+}
+
+.animate-drop {
+    animation: drop 1s;
+}
