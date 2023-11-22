@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
     border:0.25px solid blue;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -15,7 +15,7 @@ html {
 /* navigation start */
 
 #nav {
-    @apply px-8 md:px-14 lg:px-32 xl:px-64
+    @apply px-8 md:px-14 lg:px-24 xl:px-36 2xl:px-64
 }
 
 .active-nav {
@@ -53,9 +53,11 @@ html {
 }
 
 .section-title {
-    @apply my-2 p-2 text-4xl text-white uppercase;
+    @apply mt-10 md:mt-5 my-2 pt-4 text-4xl uppercase font-bold;
 }
-
+p{
+    @apply text-sm md:text-base
+}
 h4 {
     @apply text-center
 }
@@ -69,7 +71,10 @@ h4 {
 }
 
 .card {
-   /* @apply w-60 py-5 md:py-0 h-96 xl:h-96 xl:pt-10;*/
+   @apply w-52 my-10 py-5 h-96 pt-10;
+}
+.card-title{
+    @apply py-3 text-center font-bold uppercase text-accent-color text-xl  tracking-wider
 }
 
 .card:hover {
