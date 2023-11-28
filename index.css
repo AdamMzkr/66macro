@@ -15,7 +15,7 @@ html {
 /* navigation start */
 
 #nav {
-    @apply px-8 md:px-14 lg:px-24 xl:px-36 2xl:px-64
+    @apply px-8 md:px-14 lg:px-24 xl:px-36
 }
 
 .active-nav {
